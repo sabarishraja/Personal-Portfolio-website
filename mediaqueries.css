@@ -1,0 +1,19 @@
+@media screen and (min-width: 1001px){
+    #hamburger_nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px){
+    #desktop_nav{
+        display: none;
+    }
+    #hamburger_nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+    }
+    #arrow{
+        display: none;
+    }
+}
