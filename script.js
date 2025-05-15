@@ -18,3 +18,68 @@ function changetocross(){
         menu_icon.src = "assets/icons8-hamburger.svg";
     }
 }
+
+const roles = [
+  "Frontend Developer",
+  "Machine Learning Enthusiast",
+  "Data Science Student"
+];
+const typingSpeed = 100;    
+const deletingSpeed = 50; 
+const pauseTime = 1000;    
+let i = 0, pos = 0, forward = true;
+const el = document.getElementById("role");
+
+function typeRole() {
+  const text = roles[i];
+
+  if (forward) {
+    el.textContent = text.slice(0, ++pos);
+    if (pos === text.length) {
+      forward = false;
+      return setTimeout(typeRole, pauseTime);
+    }
+  } else {
+    el.textContent = text.slice(0, --pos);
+    if (pos === 0) {
+      forward = true;
+      i = (i + 1) % roles.length;
+      return setTimeout(typeRole, pauseTime);
+    }
+  }
+
+
+  setTimeout(
+    typeRole,
+    forward ? typingSpeed : deletingSpeed
+  );
+}
+
+
+typeRole();
+
+// Flight animation in about section
+
+const airplane        = document.getElementById("airplane");
+const flightContainer = document.querySelector(".flight-container");
+const educationRow    = document.querySelector(".education-container");
+
+window.addEventListener("scroll", () => {
+  // 1) current geometry
+  const flightRect  = flightContainer.getBoundingClientRect();
+  const eduRect     = educationRow.getBoundingClientRect();
+  const planeRect   = airplane.getBoundingClientRect();
+  const viewportH   = window.innerHeight;
+
+  // 2) compute runway length each time
+  const maxX = flightRect.width - planeRect.width;
+
+  // 3) determine progress between "row just entering view" → "row just leaving view"
+  const start   = viewportH;            // when eduRect.top hits bottom of viewport
+  const end     = -eduRect.height;      // when eduRect.bottom clears the top
+  const raw     = (start - eduRect.top) / (start - end);
+  const progress = Math.min(Math.max(raw, 0), 1);
+
+  // 4) apply movement
+  airplane.style.transform = `translateX(${progress * maxX}px)`;
+});
