@@ -353,7 +353,7 @@ a:hover {
 .text-container p {
   text-align: center;
   line-height: 1.6;
-  width: 60%;
+  width: 70%;
   color: #000000;
   margin: auto;
 }
@@ -391,41 +391,76 @@ a:hover {
 
 /* EXPERIENCE SECTION */
 
-#experience {
-  position: relative;
+/* SKILLS SECTION */
+#skills {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
 }
 
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
+#skills .section__text__p1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#skills .title {
+  text-align: center;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+/* flex-wrap + center for smaller screens */
+#skills .about-containers {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  gap: 2rem;
+  justify-content: center;
 }
 
-article {
+/* each skills card */
+#skills .details-container {
+  flex: 1 1 300px;       /* grows, shrinks, base 300px */
+  max-width: 400px;
+  background: #fff;
+  border: 0.1rem solid #A3A3A3;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* section headings inside each card */
+#skills .details-container .experience-sub-title {
+  margin-bottom: 1.5rem;
+}
+
+/* list out each skill */
+#skills .article-container {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-article .icon {
-  cursor: default;
+/* individual skill row */
+#skills article.skill {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+/* the checkmark icon */
+#skills article.skill .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* skill name and level */
+#skills article.skill h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+#skills article.skill p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
 }
 
 /* PROJECTS SECTION */

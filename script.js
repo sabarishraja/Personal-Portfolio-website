@@ -83,3 +83,4 @@ window.addEventListener("scroll", () => {
   // 4) apply movement
   airplane.style.transform = `translateX(${progress * maxX}px)`;
 });
+
