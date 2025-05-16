@@ -173,87 +173,43 @@ Turning raw data into clear insights is my favorite kind of problem-solving.
 
 <!--Project section-->
 </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="projects-grid">
+    <!-- 1. Dynamic User Management Table -->
+    <div class="project-card"
+         onclick="window.open('https://github.com/sabarishraja/Dynamic-User-Management-Table','_blank')">
+      <img src="./assets/user_management.png" alt="Dynamic User Management Table" class="project-img"/>
+      <h2>Dynamic User Management Table</h2>
+      <p>
+        A vanilla-JS, responsive CRUD interface with avatar upload and form validation—no external libraries.
+      </p>
+    </div>
+
+    <!-- 2. Anime Recommendation System -->
+    <div class="project-card"
+         onclick="window.open('https://github.com/sabarishraja/Anime-Recommendation-system','_blank')">
+      <img src="./assets/anime-rec.png" alt="Anime Recommendation System" class="project-img"/>
+      <h2>Anime Recommendation System</h2>
+      <p>
+        Cosine-similarity based recommender over MyAnimeList data; builds user–anime rating matrix for personalized suggestions.
+      </p>
+    </div>
+
+    <!-- 3. Credit Card Fraud Detection -->
+    <div class="project-card"
+         onclick="window.open('https://github.com/sabarishraja/Credit-Card-Fraud-detection-Research-Paper-.git','_blank')">
+      <img src="./assets/fraud-detection.png" alt="Credit Card Fraud Detection" class="project-img"/>
+      <h2>Credit Card Fraud Detection</h2>
+      <p>
+        Ensemble of Isolation Forest, XGBoost & SVM with ADASYN/NearMiss; 97% PR-score, 96.3% ROC-AUC on imbalanced data.
+      </p>
+    </div>
+  </div>
 </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -264,7 +220,7 @@ Turning raw data into clear insights is my favorite kind of problem-solving.
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:examplemail@gmail.com">sabarishds03@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -287,7 +243,7 @@ Turning raw data into clear insights is my favorite kind of problem-solving.
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2023 Sabarish RRR. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
