@@ -48,34 +48,78 @@
 }
 
 @media screen and (max-width: 600px) {
-  .education-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .flight-container {
-    flex: 0 0 120px;
-    width: 120px;
-    height: 60px;
-    margin: 0 auto;
-  }
-  #airplane {
-    width: 60px;
-  }
-  #contact,
-  footer {
-    height: 40vh;
-  }
+  /* PROFILE */
   #profile {
     height: 83vh;
     margin-bottom: 0;
   }
-  article {
+
+  /* HIDE FLIGHT ANIMATION */
+  #about .flight-container {
+    display: none;
+  }
+
+  /* ABOUT SECTION STACKING & SIZING */
+  #about .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  /* SHRINK “Get To Know More” */
+  #about .section__text__p1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* EDUCATION ROW SIDE-BY-SIDE */
+  #about .education-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  #about .edu {
+    flex: 0 1 45%;
+    text-align: center;
+  }
+  #about .edu h3 {
     font-size: 1rem;
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+  #about .edu p {
+    font-size: 0.85rem;
   }
+
+  /* SUMMARY TEXT */
+  .text-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: justify;
+    line-height: 1.6;
+    color: #000;
+  }
+
+  /* NAVIGATION */
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .nav-links li a,
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+
+  /* ICONS & BUTTON CONTAINERS */
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -84,8 +128,9 @@
   .contact-info-container {
     margin: 0;
   }
-  .contact-info-container p,
-  .nav-links li a {
+
+  /* OTHER TYPOGRAPHY */
+  article {
     font-size: 1rem;
   }
   .experience-sub-title {
@@ -93,11 +138,6 @@
   }
   .logo {
     font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
   }
   .section__pic-container {
     width: auto;
@@ -110,7 +150,14 @@
   .title {
     font-size: 2rem;
   }
-  .text-container {
-    text-align: justify;
+
+  /* CONTACT & FOOTER HEIGHTS */
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
   }
 }
