@@ -84,3 +84,31 @@ window.addEventListener("scroll", () => {
   airplane.style.transform = `translateX(${progress * maxX}px)`;
 });
 
+// JS: append to script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const timeline   = document.querySelector('.timeline');
+  const progress   = document.querySelector('.line-progress');
+  const items      = document.querySelectorAll('.timeline-item');
+
+  // On vertical scroll, grow/shrink horizontal progress
+  function updateProgress() {
+    const rect    = timeline.getBoundingClientRect();
+    const totalW  = timeline.scrollWidth;
+    // how far into the timeline container we are
+    const scrolled = window.innerHeight - rect.top;
+    const pct      = Math.max(0, Math.min(scrolled / (rect.height + window.innerHeight), 1));
+    progress.style.width = `${pct * totalW}px`;
+  }
+  window.addEventListener('scroll', updateProgress);
+  updateProgress();
+
+  // Fade items in/out
+  const observer = new IntersectionObserver(entries => {
+    for (let entry of entries) {
+      entry.target.classList.toggle('in-view', entry.isIntersecting);
+    }
+  }, { threshold: 0.3 });
+
+  items.forEach(item => observer.observe(item));
+});

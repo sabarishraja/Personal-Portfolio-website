@@ -62,39 +62,106 @@
       </div>
     </section>
     <!--ABOUT SECTION-->
-    <section id="about">
-  <p class="section__text__p1">Get To Know More</p>
-  <h1 class="title">About Me</h1>
+    <br>
+<section id="about">
+  <div class="about-header">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+  </div>
 
-  <div class="section-container">
-    <div class="about-details-container">
-      <!-- 1) Education + flight animation -->
-      <div class="education-container">
-        <div class="edu edu-left">
-          <h3>B.Tech in Computer Science</h3>
-          <p>SRM Institute of Science and Technology (GPA: 3.9)</p>
-        </div>
-
-        <div class="flight-container">
-          <img src="./assets/flight.svg" alt="" id="airplane" />
-        </div>
-
-        <div class="edu edu-right">
-          <h3>M.S. in Computer Science</h3>
-          <p>Illinois Institute of Technology (GPA: 3.6)</p>
-        </div>
+  <div class="about-content">
+    <!-- Education + Flight (unchanged) -->
+    <div class="education-container">
+      <div class="edu edu-left">
+        <h3>B.Tech in Computer Science</h3>
+        <p>SRM Institute of Science and Technology (GPA: 3.9)</p>
       </div>
-
-      <!-- 2) Summary for interviewer -->
-      <div class="text-container">
-        <p>
-          I’m currently debugging my M.S. in Computer Science at IIT Chicago (May 2026).
-My Springer paper armed DistilBERT with 92% accuracy for tweet classification.
-I’ve built real-world ML tools—a disaster-tweet classifier, an anime recommendation engine, and a sales-insights dashboard.
-Turning raw data into clear insights is my favorite kind of problem-solving.
-        </p>
+      <div class="flight-container">
+        <img src="./assets/flight.svg" alt="" id="airplane" />
+      </div>
+      <div class="edu edu-right">
+        <h3>M.S. in Computer Science</h3>
+        <p>Illinois Institute of Technology (GPA: 3.6)</p>
       </div>
     </div>
+
+    <!-- Personal Summary -->
+    <div class="summary-container">
+      <p>
+        I’m currently debugging my M.S. in Computer Science at IIT Chicago (May 2026).<br>
+        My Springer paper armed DistilBERT with 92% accuracy for tweet classification.<br>
+        I’ve built real-world ML tools—a disaster-tweet classifier, an anime recommendation engine, and a sales-insights dashboard.<br>
+        Turning raw data into clear insights is my favorite kind of problem-solving.
+      </p>
+    </div>
+
+    <!-- Research Publications -->
+    <div class="research-container">
+      <h2 class="subsection-title">Research Publications</h2>
+      <div class="research-grid">
+        <a href="https://doi.org/10.1007/978-3-031-69982-5_1" target="_blank" class="research-card">
+          <img src="./assets/research1.png" alt="LLM Tweet Classification Paper" class="research-img" />
+          <h3>Analyzing the Computational Efficiency of LLM Models for NLP Tweet Classification During Emergency-Crisis</h3>
+          <p>This ICCIDS Springer paper examines how LLMs perform under emergency constraints, focusing on rapid tweet classification and computational efficiency.</p>
+          <p><strong>Collaborators:</strong> Sudarson B, Muthukumar Pattaiah</p>
+        </a>
+        <a href="https://pubs.aip.org/aip/acp/article-lookup/doi/10.1063/5.0254256" target="_blank" class="research-card">
+          <img src="./assets/research2.png" alt="Fraud Detection Ensemble Learning Paper" class="research-img" />
+          <h3>A Scalable Ensemble Learning with Performance Evaluation for Credit Card Fraud Detection</h3>
+          <p>This AIP Proceeding explores ensemble models (Isolation Forest, XGBoost, SVM) with ADASYN/NearMiss to tackle data imbalance in fraud detection.</p>
+          <p><strong>Collaborator:</strong> Venkata Krishna Sai Sharan Vallakavi</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Work Experience Timeline -->
+<section id="experience-timeline">
+  <h2 class="subsection-title">Work Experience</h2>
+  <div class="timeline">
+  <div class="line"></div>
+  <div class="line-progress"></div>
+
+  <!-- 1. oldest -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3>Technical Team Member</h3>
+      <span class="period">Sketch Club <br> Sep 2021 – Jun 2022</span>
+      <p>Hosted coding workshops and mentored peers in algorithms and data structures.</p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3>Campus Ambassador</h3>
+      <span class="period">Viral Fission <br> Dec 2021 – Aug 2022</span>
+      <p>Led on-campus marketing, boosting brand engagement across multiple universities.</p>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3>Web Development Intern</h3>
+      <span class="period">Bytecompass <br> Feb 2024 – May 2024</span>
+      <p>Built responsive JS/React interfaces for user-management and dashboards.</p>
+    </div>
+  </div>
+
+  <!-- 4 newest -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <h3>Technical Content Writer</h3>
+      <span class="period">Medium · Freelance <br> Jul 2023 – Present</span>
+      <p>Crafted research-driven ML & NLP articles on fraud detection and crisis management.</p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
   </div>
 </section>
 <br>
