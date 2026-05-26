@@ -4,301 +4,309 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sabarish Raja</title>
+    <title>Sabarish Raja — AI/ML Engineer & Data Analyst</title>
+    <meta name="description" content="Portfolio of Sabarish Raja Ramesh Raja — AI/ML engineer and data analyst. MS Computer Science, Illinois Institute of Technology." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Sabarish Raja Ramesh Raja</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <a href="#top" class="logo">SR<span class="logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+
     <nav id="hamburger-nav">
-      <div class="logo">Sabarish Raja Ramesh Raja</div>
+      <a href="#top" class="logo">SR<span class="logo-dot">.</span></a>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#research" onclick="toggleMenu()">Research</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile6.jpg" alt="It's me Sab" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sabarish RRR</h1>
-        <p class="section__text__p2">
-            <span id="role"></span>
+
+    <main id="top">
+      <!-- HERO -->
+      <section id="profile" class="reveal">
+        <div class="profile-grid">
+          <div class="profile-text">
+            <p class="eyebrow">Chicago, IL  ·  Available May 2026</p>
+            <h1 class="hero-title">
+              Sabarish Raja <em>Ramesh Raja</em>
+            </h1>
+            <p class="hero-role">
+              <span class="mono">&gt;</span>
+              <span id="role"></span>
+            </p>
+            <p class="hero-tagline">
+              Data analyst &amp; AI/ML engineer building analytics pipelines, KPI dashboards, and agentic AI systems — from prompt engineering to production deployment.
+            </p>
+            <div class="btn-container">
+              <a class="btn btn-primary" href="./assets/Sabarish Raja Resume.pdf" target="_blank" rel="noopener">
+                Download Résumé <span class="arrow-ico">↗</span>
+              </a>
+              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <div class="profile-photo">
+            <img src="./assets/profile6.jpg" alt="Portrait of Sabarish Raja" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="reveal">
+        <div class="section-head">
+          <span class="section-num mono">01</span>
+          <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead">
+            I ship end-to-end AI products — from prompt engineering and multi-model orchestration to production deployment. My work sits at the intersection of <em>analytics</em>, <em>language models</em>, and <em>product engineering</em>: KPI dashboards that cut reporting time by 75%, agentic platforms that resolve 70%+ of cases autonomously, and mobile apps powered by multi-model Claude pipelines.
+          </p>
+          <dl class="about-meta">
+            <div><dt>Based in</dt><dd>Chicago, IL</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:sabarishds03@gmail.com">sabarishds03@gmail.com</a></dd></div>
+            <div><dt>Status</dt><dd>Graduating May 2026</dd></div>
+            <div><dt>Focus</dt><dd>AI/ML · Data · Agentic systems</dd></div>
+          </dl>
+        </div>
+
+        <div class="education-block">
+          <div class="edu">
+            <p class="mono edu-period">2026 · Master of Science</p>
+            <h3>Illinois Institute of Technology</h3>
+            <p class="muted">Computer Science  ·  GPA 3.8</p>
+            <p class="muted small">Machine Learning · Advanced Database Organization · Medical Informatics &amp; AI</p>
+          </div>
+          <div class="edu">
+            <p class="mono edu-period">2023 · Bachelor of Technology</p>
+            <h3>SRM Institute of Science &amp; Technology</h3>
+            <p class="muted">Computer Science  ·  GPA 3.9</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="reveal">
+        <div class="section-head">
+          <span class="section-num mono">02</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+
+        <ol class="timeline-v">
+          <li class="tl-item">
+            <div class="tl-period mono">Oct 2025 — Present</div>
+            <div class="tl-body">
+              <h3>SEO &amp; Data Intern <span class="muted">· SubjectToClimate</span></h3>
+              <p>Designed automated KPI dashboards using Supermetrics and GA4 tracking 20+ metrics across 8 state-hub dashboards — cutting manual reporting time by 75% and eliminating 10+ hours/week of data extraction.</p>
+              <p>Built an n8n workflow that fetches daily climate news across 4 grade bands, scores climate relevance via LLM, auto-assigns categories, and publishes approved articles to the CMS while routing low-confidence results to the content team via Slack.</p>
+              <p>Engineered an AI analytics platform unifying GA4, GSC, FullStory, and Meilisearch into a Supabase warehouse — enabling natural-language querying via Claude API with automated SQL generation across multi-million-row tables.</p>
+              <ul class="tag-row">
+                <li>GA4</li><li>Supabase</li><li>n8n</li><li>Claude API</li><li>BigQuery</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-period mono">Feb 2024 — May 2024</div>
+            <div class="tl-body">
+              <h3>Web Development Intern <span class="muted">· Bytecompass</span></h3>
+              <p>Built responsive JavaScript/React interfaces for user management and admin dashboards across internal tooling.</p>
+              <ul class="tag-row">
+                <li>React</li><li>JavaScript</li><li>REST</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-period mono">Jul 2023 — Present</div>
+            <div class="tl-body">
+              <h3>Technical Content Writer <span class="muted">· Medium · Freelance</span></h3>
+              <p>Crafted research-driven ML &amp; NLP articles on fraud detection, crisis-response classification, and applied data science.</p>
+              <ul class="tag-row">
+                <li>Writing</li><li>ML</li><li>NLP</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal">
+        <div class="section-head">
+          <span class="section-num mono">03</span>
+          <h2 class="section-title">Selected Work</h2>
+        </div>
+
+        <div class="projects-list">
+          <a class="project-row" href="#" data-no-link>
+            <div class="project-meta">
+              <p class="mono small">2025 — Present  ·  Solo</p>
+              <h3>StyleSense</h3>
+              <p class="project-sub">AI Wardrobe &amp; Outfit Planner</p>
+            </div>
+            <div class="project-body">
+              <p>Production-grade React Native app with Supabase backend, distributed as a standalone Android APK via EAS Build — integrating multi-model Claude API (Sonnet 4.5 vision + Haiku 4.5 chat) for clothing classification and conversational outfit generation.</p>
+              <p>Multi-stage outfit pipeline: natural language input → Postgres filtering by formality/season → Claude Sonnet visual reasoning over wardrobe images → ranked outfit combinations with gap analysis and affiliate shopping links. Voice input via Whisper, weather-aware prompts, PostHog + Sentry observability across 12+ events.</p>
+              <ul class="tag-row">
+                <li>React Native</li><li>Supabase</li><li>Claude API</li><li>Whisper</li><li>EAS Build</li>
+              </ul>
+            </div>
+          </a>
+
+          <a class="project-row" href="#" data-no-link>
+            <div class="project-meta">
+              <p class="mono small">Sep — Nov 2025</p>
+              <h3>AI Bookstore Platform</h3>
+              <p class="project-sub">Full-stack agentic commerce</p>
+            </div>
+            <div class="project-body">
+              <p>Architected a full-stack LLM agentic platform using LangGraph and GPT-4 Vision that resolved 70%+ of customer support and fraud cases autonomously.</p>
+              <p>Designed semantic search using vector embeddings to improve book discovery; implemented JWT-secured RESTful APIs and an admin dashboard with real-time analytics for AI-driven case management.</p>
+              <ul class="tag-row">
+                <li>LangGraph</li><li>GPT-4 Vision</li><li>Vector DB</li><li>JWT</li>
+              </ul>
+            </div>
+          </a>
+
+          <a class="project-row" href="https://github.com/sabarishraja/Credit-Card-Fraud-detection-Research-Paper-" target="_blank" rel="noopener">
+            <div class="project-meta">
+              <p class="mono small">Jan 2025  ·  Published</p>
+              <h3>Credit-Card Fraud Detection</h3>
+              <p class="project-sub">Ensemble learning research</p>
+            </div>
+            <div class="project-body">
+              <p>Ensemble of Isolation Forest + XGBoost + SVM achieving 97.0% PR-score and 96.3% ROC-AUC on a highly imbalanced fraud dataset using ADASYN and NearMiss resampling.</p>
+              <p>Findings published in AIP Conference Proceedings; presented at ICRAIC 2024.</p>
+              <ul class="tag-row">
+                <li>XGBoost</li><li>SVM</li><li>ADASYN</li><li>Imbalanced data</li>
+              </ul>
+              <span class="row-arrow mono">↗</span>
+            </div>
+          </a>
+        </div>
+
+        <h4 class="subhead mono">Earlier work</h4>
+        <ul class="earlier-list">
+          <li>
+            <a href="https://github.com/sabarishraja/Anime-Recommendation-system" target="_blank" rel="noopener">
+              <span>Anime Recommendation System</span>
+              <span class="muted">Cosine-similarity recommender over MyAnimeList data</span>
+              <span class="row-arrow mono">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sabarishraja/Dynamic-User-Management-Table" target="_blank" rel="noopener">
+              <span>Dynamic User Management Table</span>
+              <span class="muted">Vanilla JS CRUD interface with validation, no deps</span>
+              <span class="row-arrow mono">↗</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="reveal">
+        <div class="section-head">
+          <span class="section-num mono">04</span>
+          <h2 class="section-title">Toolkit</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4 class="mono">Languages</h4>
+            <p>Python · SQL · JavaScript · C++ · R</p>
+          </div>
+          <div class="skill-group">
+            <h4 class="mono">AI / ML</h4>
+            <p>LangChain · LangGraph · Multi-Agent Systems · RAG · NLP · Transformers · PyTorch · TensorFlow · scikit-learn · Hugging Face · Prompt Engineering</p>
+          </div>
+          <div class="skill-group">
+            <h4 class="mono">Backend</h4>
+            <p>Supabase · Node.js · Express · MongoDB · Docker · n8n · REST APIs · Vector Embeddings</p>
+          </div>
+          <div class="skill-group">
+            <h4 class="mono">Data &amp; Analytics</h4>
+            <p>Google Analytics 4 · Power BI · Tableau · Looker Studio · BigQuery · Statistical Analysis</p>
+          </div>
+          <div class="skill-group">
+            <h4 class="mono">Mobile / Frontend</h4>
+            <p>React Native (Expo) · React · EAS Build · CI/CD · GitHub Actions</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEARCH -->
+      <section id="research" class="reveal">
+        <div class="section-head">
+          <span class="section-num mono">05</span>
+          <h2 class="section-title">Research</h2>
+        </div>
+
+        <ul class="research-list">
+          <li>
+            <a href="https://pubs.aip.org/aip/acp/article-lookup/doi/10.1063/5.0254256" target="_blank" rel="noopener">
+              <p class="mono small">AIP Conference Proceedings  ·  ICRAIC 2024</p>
+              <h3>A Scalable Ensemble Learning with Performance Evaluation for Credit Card Fraud Detection</h3>
+              <p class="muted">Isolation Forest + XGBoost + SVM with ADASYN/NearMiss resampling on highly imbalanced fraud data.</p>
+              <span class="row-arrow mono">Read ↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/978-3-031-69982-5_1" target="_blank" rel="noopener">
+              <p class="mono small">Springer  ·  ICCIDS</p>
+              <h3>Analyzing the Computational Efficiency of LLM Models for NLP Tweet Classification During Emergency Crisis</h3>
+              <p class="muted">Examines LLM performance under emergency constraints — rapid tweet classification and compute efficiency.</p>
+              <span class="row-arrow mono">Read ↗</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="reveal">
+        <div class="section-head">
+          <span class="section-num mono">06</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
+        <p class="contact-lead">
+          Open to full-time roles in AI/ML engineering and data analytics starting <em>May 2026</em>. Always happy to talk about agentic systems, analytics pipelines, or anything in between.
         </p>
-        <br>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Sabarish Raja Resume.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        
-      </div>
-    </section>
-    <!--ABOUT SECTION-->
-    <br>
-<section id="about">
-  <div class="about-header">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-  </div>
-
-  <div class="about-content">
-    <!-- Education + Flight (unchanged) -->
-    <div class="education-container">
-      <div class="edu edu-left">
-        <h3>B.Tech in Computer Science</h3>
-        <p>SRM Institute of Science and Technology (GPA: 3.9)</p>
-      </div>
-      <div class="flight-container">
-        <img src="./assets/flight.svg" alt="" id="airplane" />
-      </div>
-      <div class="edu edu-right">
-        <h3>M.S. in Computer Science</h3>
-        <p>Illinois Institute of Technology (GPA: 3.6)</p>
-      </div>
-    </div>
-
-    <!-- Personal Summary -->
-    <div class="summary-container">
-      <p>
-        I’m currently debugging my M.S. in Computer Science at IIT Chicago (May 2026).<br>
-        My Springer paper armed DistilBERT with 92% accuracy for tweet classification.<br>
-        I’ve built real-world ML tools—a disaster-tweet classifier, an anime recommendation engine, and a sales-insights dashboard.<br>
-        Turning raw data into clear insights is my favorite kind of problem-solving.
-      </p>
-    </div>
-
-    <!-- Research Publications -->
-    <div class="research-container">
-      <h2 class="subsection-title">Research Publications</h2>
-      <div class="research-grid">
-        <a href="https://doi.org/10.1007/978-3-031-69982-5_1" target="_blank" class="research-card">
-          <img src="./assets/research1.png" alt="LLM Tweet Classification Paper" class="research-img" />
-          <h3>Analyzing the Computational Efficiency of LLM Models for NLP Tweet Classification During Emergency-Crisis</h3>
-          <p>This ICCIDS Springer paper examines how LLMs perform under emergency constraints, focusing on rapid tweet classification and computational efficiency.</p>
-          <p><strong>Collaborators:</strong> Sudarson B, Muthukumar Pattaiah</p>
+        <a class="contact-email" href="mailto:sabarishds03@gmail.com">
+          sabarishds03@gmail.com <span class="arrow-ico">↗</span>
         </a>
-        <a href="https://pubs.aip.org/aip/acp/article-lookup/doi/10.1063/5.0254256" target="_blank" class="research-card">
-          <img src="./assets/research2.png" alt="Fraud Detection Ensemble Learning Paper" class="research-img" />
-          <h3>A Scalable Ensemble Learning with Performance Evaluation for Credit Card Fraud Detection</h3>
-          <p>This AIP Proceeding explores ensemble models (Isolation Forest, XGBoost, SVM) with ADASYN/NearMiss to tackle data imbalance in fraud detection.</p>
-          <p><strong>Collaborator:</strong> Venkata Krishna Sai Sharan Vallakavi</p>
-        </a>
-      </div>
-    </div>
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/sabarishraja03/" target="_blank" rel="noopener"><span class="mono">01</span> LinkedIn <span class="row-arrow mono">↗</span></a></li>
+          <li><a href="https://github.com/sabarishraja" target="_blank" rel="noopener"><span class="mono">02</span> GitHub <span class="row-arrow mono">↗</span></a></li>
+          <li><a href="tel:+18728990544"><span class="mono">03</span> +1 (872) 899-0544 <span class="row-arrow mono">↗</span></a></li>
+        </ul>
+      </section>
+    </main>
 
-    <!-- Work Experience Timeline -->
-<section id="experience-timeline">
-  <h2 class="subsection-title">Work Experience</h2>
-  <div class="timeline">
-  <div class="line"></div>
-  <div class="line-progress"></div>
-
-  <!-- 1. oldest -->
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Technical Team Member</h3>
-      <span class="period">Sketch Club <br> Sep 2021 – Jun 2022</span>
-      <p>Hosted coding workshops and mentored peers in algorithms and data structures.</p>
-    </div>
-  </div>
-
-  <!-- 2 -->
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Campus Ambassador</h3>
-      <span class="period">Viral Fission <br> Dec 2021 – Aug 2022</span>
-      <p>Led on-campus marketing, boosting brand engagement across multiple universities.</p>
-    </div>
-  </div>
-
-  <!-- 3 -->
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Web Development Intern</h3>
-      <span class="period">Bytecompass <br> Feb 2024 – May 2024</span>
-      <p>Built responsive JS/React interfaces for user-management and dashboards.</p>
-    </div>
-  </div>
-
-  <!-- 4 newest -->
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Technical Content Writer</h3>
-      <span class="period">Medium · Freelance <br> Jul 2023 – Present</span>
-      <p>Crafted research-driven ML & NLP articles on fraud detection and crisis management.</p>
-    </div>
-  </div>
-</div>
-
-</section>
-
-
-
-  </div>
-</section>
-<br>
-    <!--Skills SECTION-->
-<section id="skills">
-  <p class="section__text__p1">What I Bring</p>
-  <h1 class="title">Skills</h1>
-  <div class="about-containers">
-    <!-- Machine Learning & Data -->
-    <div class="details-container">
-      <h2 class="experience-sub-title">ML & Data</h2>
-      <div class="article-container">
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>Python</h3><p>Expert</p></div>
-        </article>
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>scikit-learn</h3><p>Experienced</p></div>
-        </article>
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>TensorFlow</h3><p>Intermediate</p></div>
-        </article>
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>PyTorch</h3><p>Intermediate</p></div>
-        </article>
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>Keras</h3><p>Experienced</p></div>
-        </article>
-      </div>
-    </div>
-
-    <!-- Tools & Infrastructure -->
-    <div class="details-container">
-      <h2 class="experience-sub-title">Tools & Infrastructure</h2>
-      <div class="article-container">
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>SQL</h3><p>Experienced</p></div>
-        </article>
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>Docker</h3><p>Intermediate</p></div>
-        </article>
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>Flask</h3><p>Experienced</p></div>
-        </article>
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>AWS</h3><p>Basic</p></div>
-        </article>
-        <article class="skill">
-          <img src="./assets/checkmark.png" class="icon" alt="">
-          <div><h3>Git</h3><p>Experienced</p></div>
-        </article>
-      </div>
-    </div>
-  </div>
-
-<!--Project section-->
-</section>
-
-<section id="projects">
-  <p class="section__text__p1">Browse My Recent</p>
-  <h1 class="title">Projects</h1>
-  <div class="projects-grid">
-    <!-- 1. Dynamic User Management Table -->
-    <div class="project-card"
-         onclick="window.open('https://github.com/sabarishraja/Dynamic-User-Management-Table','_blank')">
-      <img src="./assets/user_management.png" alt="Dynamic User Management Table" class="project-img"/>
-      <h2>Dynamic User Management Table</h2>
-      <p>
-        A vanilla-JS, responsive CRUD interface with avatar upload and form validation—no external libraries.
-      </p>
-    </div>
-
-    <!-- 2. Anime Recommendation System -->
-    <div class="project-card"
-         onclick="window.open('https://github.com/sabarishraja/Anime-Recommendation-system','_blank')">
-      <img src="./assets/anime-rec.png" alt="Anime Recommendation System" class="project-img"/>
-      <h2>Anime Recommendation System</h2>
-      <p>
-        Cosine-similarity based recommender over MyAnimeList data; builds user–anime rating matrix for personalized suggestions.
-      </p>
-    </div>
-
-    <!-- 3. Credit Card Fraud Detection -->
-    <div class="project-card"
-         onclick="window.open('https://github.com/sabarishraja/Credit-Card-Fraud-detection-Research-Paper-.git','_blank')">
-      <img src="./assets/fraud-detection.png" alt="Credit Card Fraud Detection" class="project-img"/>
-      <h2>Credit Card Fraud Detection</h2>
-      <p>
-        Ensemble of Isolation Forest, XGBoost & SVM with ADASYN/NearMiss; 97% PR-score, 96.3% ROC-AUC on imbalanced data.
-      </p>
-    </div>
-  </div>
-</section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:sabarishds03@gmail.com">sabarishds03@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sabarishraja03/'"
-          />
-          <p><a href="https://www.linkedin.com/in/sabarishraja03/">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/sabarishraja'"
-          />
-          <p><a href="https://github.com/sabarishraja">Github</a></p>
-        </div>
-      </div>
-    </section>
     <footer>
-      <p>Copyright &#169; 2023 Sabarish RRR. All Rights Reserved.</p>
+      <div class="footer-row">
+        <p class="mono small">© 2026  Sabarish Raja Ramesh Raja</p>
+        <p class="mono small">Designed &amp; built in Chicago</p>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
