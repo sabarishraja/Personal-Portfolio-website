@@ -128,6 +128,10 @@ nav {
 .nav-links a:hover { color: var(--text); }
 .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
 
+/* Active section (scroll-spy) */
+.nav-links a.active { color: var(--text); }
+.nav-links a.active::after { transform: scaleX(1); transform-origin: left; }
+
 #hamburger-nav { display: none; }
 
 .hamburger-icon { display: flex; flex-direction: column; justify-content: space-between; width: 28px; height: 18px; cursor: pointer; }
@@ -165,7 +169,7 @@ nav {
 
 main { max-width: var(--container); margin: 0 auto; padding: 0 var(--pad-x); }
 
-section { padding: var(--section-y) 0; border-top: 1px solid var(--rule-soft); }
+section { padding: var(--section-y) 0; border-top: 1px solid var(--rule-soft); scroll-margin-top: 90px; }
 section:first-of-type { border-top: none; }
 
 .section-head {
@@ -208,6 +212,23 @@ section:first-of-type { border-top: none; }
   left: 0; top: 50%;
   width: 1rem; height: 1px;
   background: var(--accent);
+}
+
+/* Availability status dot — replaces the accent line in the hero */
+#profile .eyebrow { padding-left: 0; display: inline-flex; align-items: center; gap: 0.6rem; }
+#profile .eyebrow::before { display: none; }
+.status-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #4ADE80;
+  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5);
+  animation: pulse-dot 2.4s ease-out infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse-dot {
+  0%   { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5); }
+  70%  { box-shadow: 0 0 0 7px rgba(74, 222, 128, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
 }
 
 .hero-title {
@@ -600,3 +621,13 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ---------- ACCESSIBILITY ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .reveal { opacity: 1; transform: none; }
+  .status-dot { animation: none; }
+}
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }

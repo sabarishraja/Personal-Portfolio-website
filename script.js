@@ -55,3 +55,31 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+// Scroll-spy: highlight the nav link for the section in view
+const navLinks = Array.from(document.querySelectorAll('#desktop-nav .nav-links a'));
+const sectionsById = {};
+navLinks.forEach((link) => {
+  const id = link.getAttribute('href')?.replace('#', '');
+  const section = id && document.getElementById(id);
+  if (section) sectionsById[id] = link;
+});
+
+const spyObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      const link = sectionsById[entry.target.id];
+      if (!link) return;
+      if (entry.isIntersecting) {
+        navLinks.forEach((l) => l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  },
+  { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+);
+
+Object.keys(sectionsById).forEach((id) => {
+  const section = document.getElementById(id);
+  if (section) spyObserver.observe(section);
+});

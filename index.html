@@ -5,7 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sabarish Raja — AI/ML Engineer & Data Analyst</title>
-    <meta name="description" content="Portfolio of Sabarish Raja Ramesh Raja — AI/ML engineer and data analyst. MS Computer Science, Illinois Institute of Technology." />
+    <meta name="description" content="Portfolio of Sabarish Raja Ramesh Raja — AI/ML engineer and data analyst. MS Computer Science, Illinois Institute of Technology. Building agentic AI systems, analytics pipelines, and KPI dashboards." />
+    <meta name="author" content="Sabarish Raja Ramesh Raja" />
+    <meta name="theme-color" content="#0A0A0B" />
+    <link rel="canonical" href="https://sabarishraja.github.io/Personal-Portfolio-website/" />
+
+    <!-- Favicon (inline SVG monogram) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0A0B'/%3E%3Ctext x='50%25' y='53%25' dominant-baseline='middle' text-anchor='middle' font-family='Segoe UI,Arial,sans-serif' font-size='15' font-weight='700' fill='%23EDEDED'%3ESR%3C/text%3E%3Ccircle cx='25' cy='23' r='2' fill='%237DD3FC'/%3E%3C/svg%3E" />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sabarish Raja" />
+    <meta property="og:title" content="Sabarish Raja — AI/ML Engineer & Data Analyst" />
+    <meta property="og:description" content="Building agentic AI systems, analytics pipelines, and KPI dashboards. MS Computer Science, Illinois Institute of Technology." />
+    <meta property="og:url" content="https://sabarishraja.github.io/Personal-Portfolio-website/" />
+    <meta property="og:image" content="https://sabarishraja.github.io/Personal-Portfolio-website/assets/profile6.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sabarish Raja — AI/ML Engineer & Data Analyst" />
+    <meta name="twitter:description" content="Building agentic AI systems, analytics pipelines, and KPI dashboards." />
+    <meta name="twitter:image" content="https://sabarishraja.github.io/Personal-Portfolio-website/assets/profile6.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -47,7 +66,7 @@
       <section id="profile" class="reveal">
         <div class="profile-grid">
           <div class="profile-text">
-            <p class="eyebrow">Chicago, IL  ·  Available May 2026</p>
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Chicago, IL  ·  Available May 2026</p>
             <h1 class="hero-title">
               Sabarish Raja <em>Ramesh Raja</em>
             </h1>
@@ -157,7 +176,7 @@
         </div>
 
         <div class="projects-list">
-          <a class="project-row" href="https://github.com/sabarishraja/StyleSense" target="_blank" rel="noopener">
+          <a class="project-row" href="https://style-sense-liard.vercel.app/" target="_blank" rel="noopener">
             <div class="project-meta">
               <p class="mono small">2025 — Present  ·  Solo</p>
               <h3>StyleSense</h3>
@@ -165,9 +184,56 @@
             </div>
             <div class="project-body">
               <p>Production-grade React Native app with Supabase backend, distributed as a standalone Android APK via EAS Build — integrating multi-model Claude API (Sonnet 4.5 vision + Haiku 4.5 chat) for clothing classification and conversational outfit generation.</p>
-              <p>Multi-stage outfit pipeline: natural language input → Postgres filtering by formality/season → Claude Sonnet visual reasoning over wardrobe images → ranked outfit combinations with gap analysis and affiliate shopping links. Voice input via Whisper, weather-aware prompts, PostHog + Sentry observability across 12+ events.</p>
+              <p>Claude runs behind a Supabase Edge Function acting as a secure AI proxy — the mobile bundle never touches the API key — turning image uploads into schema-validated relational data with row-level security. Multi-stage outfit pipeline: natural language → Postgres filtering by formality/season → Claude visual reasoning over wardrobe images → ranked combinations with gap analysis and affiliate links. Handles Indian ethnic wear (kurtas, sherwanis, dhotis) as first-class categories. Voice input via Whisper, weather-aware prompts, PostHog + Sentry observability.</p>
               <ul class="tag-row">
                 <li>React Native</li><li>Supabase</li><li>Claude API</li><li>Whisper</li><li>EAS Build</li>
+              </ul>
+              <span class="row-arrow mono">↗</span>
+            </div>
+          </a>
+
+          <div class="project-row" data-no-link>
+            <div class="project-meta">
+              <p class="mono small">2026  ·  Solo</p>
+              <h3>Marketing Video Agent</h3>
+              <p class="project-sub">Multi-model agentic video generation</p>
+            </div>
+            <div class="project-body">
+              <p>An agentic pipeline that turns a product URL or one-line brief into a finished, on-brand marketing video. CrewAI agents orchestrated by Claude research the product and write a timed voiceover script; a schema-constrained Gemini "Director" plans each scene; Imagen 4 and Veo 3 generate cinematic stills and motion, while a Remotion (React/TS) renderer composites precise on-brand text, UI, logos, and transitions into the final MP4.</p>
+              <p>Hybrid by design — generative video for text-free footage, Remotion for legible brand layout — with human-in-the-loop checkpoints before every costly render step, Gemini TTS voiceover, and Vertex AI service-account auth throughout.</p>
+              <ul class="tag-row">
+                <li>CrewAI</li><li>Claude</li><li>Gemini</li><li>Imagen 4 / Veo 3</li><li>Remotion</li>
+              </ul>
+            </div>
+          </div>
+
+          <a class="project-row" href="https://github.com/sabarishraja/Claude-hindsight" target="_blank" rel="noopener">
+            <div class="project-meta">
+              <p class="mono small">2026  ·  Solo</p>
+              <h3>Claude Code Observability Suite</h3>
+              <p class="project-sub">Hindsight + Oversight — memory &amp; verification</p>
+            </div>
+            <div class="project-body">
+              <p>A two-part observability suite for AI coding agents — <em>remember what happened, verify what's claimed</em>. <strong>Hindsight</strong> indexes Claude Code's session transcripts into local SQLite and surfaces where you left off via a terminal briefing, a web dashboard with a living architecture doc, and a statusline.</p>
+              <p><strong>Oversight</strong> hooks the Stop event to re-run tests, re-check git and the filesystem, and block false "done" claims before they reach you. Both ship from a plugin marketplace and run 100% locally.</p>
+              <ul class="tag-row">
+                <li>TypeScript</li><li>Python</li><li>SQLite</li><li>Claude Code Hooks</li>
+              </ul>
+              <span class="row-arrow mono">↗</span>
+            </div>
+          </a>
+
+          <a class="project-row" href="https://inkwell-inky.vercel.app/" target="_blank" rel="noopener">
+            <div class="project-meta">
+              <p class="mono small">2026  ·  Solo</p>
+              <h3>Inkwell</h3>
+              <p class="project-sub">Letters that wait — scheduled delivery</p>
+            </div>
+            <div class="project-body">
+              <p>A full-stack web app for writing letters to your future self or others, held and delivered on a date you choose. React + TypeScript front end backed by a Node/Express API and a Supabase (Postgres) datastore with row-level security.</p>
+              <p>Server-side rendering pipeline uses headless Puppeteer to turn each letter into a polished, print-ready PDF on demand. Deployed on Vercel with a decoupled API service.</p>
+              <ul class="tag-row">
+                <li>React</li><li>TypeScript</li><li>Node / Express</li><li>Supabase</li><li>Puppeteer</li>
               </ul>
               <span class="row-arrow mono">↗</span>
             </div>
@@ -208,6 +274,41 @@
 
         <h4 class="subhead mono">Earlier work</h4>
         <ul class="earlier-list">
+          <li>
+            <a href="https://github.com/sabarishraja/MedievalTransformer" target="_blank" rel="noopener">
+              <span>CanterburyGPT</span>
+              <span class="muted">GPT-style Transformer built from scratch in PyTorch — style-conditioned generation, Build Fellowship</span>
+              <span class="row-arrow mono">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sabarishraja/Focus-Flow-" target="_blank" rel="noopener">
+              <span>Focus-Flow</span>
+              <span class="muted">Real-time webcam eye-tracking to monitor user attentiveness</span>
+              <span class="row-arrow mono">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sabarishraja/NLP-CLASSIFICATION-OF-TWEETS" target="_blank" rel="noopener">
+              <span>NLP Tweet Classification</span>
+              <span class="muted">LSTM classifier on emergency-crisis tweets (Kaggle)</span>
+              <span class="row-arrow mono">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sabarishraja/Flask-application-for-Hand-written-digit-recognizer" target="_blank" rel="noopener">
+              <span>Handwritten Digit Recognizer</span>
+              <span class="muted">CNN over MNIST served through a Flask web app</span>
+              <span class="row-arrow mono">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sabarishraja/Power-BI-sales-Insight-project" target="_blank" rel="noopener">
+              <span>Power BI Sales Insight</span>
+              <span class="muted">Sales dashboards in Power BI over a SQL data model</span>
+              <span class="row-arrow mono">↗</span>
+            </a>
+          </li>
           <li>
             <a href="https://github.com/sabarishraja/Anime-Recommendation-system" target="_blank" rel="noopener">
               <span>Anime Recommendation System</span>
